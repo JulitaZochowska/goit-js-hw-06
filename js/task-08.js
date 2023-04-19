@@ -11,7 +11,8 @@ function result() {
       alert("Please fill in all the fields");
       return;
     }
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    //mentor nie zaakceptował: console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log(form.elements);
     form.reset();
   };
   form.addEventListener("submit", onSubmit);

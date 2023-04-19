@@ -5,6 +5,9 @@ function result() {
     // fontSize musi być w px a ${} ESlint zaproponował
     span.style.fontSize = `${inputFontSize.value}px`;
   };
-  inputFontSize.addEventListener("change", setFontSize);
+  //mentor prosił aby zmienić "change" na "input", bo font-size musi zmieniać się natychmiast,
+  // a nie przy zwolnieniu inputa (wcześniej się zmieniało jak kliknęłaś, przesunęłaś i puściłaś,
+  //teraz odrazu przy przesuwaniu.)
+  inputFontSize.addEventListener("input", setFontSize);
 }
 result();

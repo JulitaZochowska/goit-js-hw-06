@@ -12,7 +12,7 @@ function result() {
       return;
     }
     //mentor nie zaakceptował: console.log(`Email: ${email.value}, Password: ${password.value}`);
-    console.log(form.elements);
+    console.log({ email: email.value, password: password.value });
     form.reset();
   };
   form.addEventListener("submit", onSubmit);
